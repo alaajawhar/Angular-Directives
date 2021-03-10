@@ -23,5 +23,13 @@
   </div>
 </div>
 
+<div *appUnless="false"> <!-- change it to false when you want to see appless real job -->
+<p>my own directive is working</p>
+</div>
+
+<div [ngSwitch]="[5]">
+  <div *ngSwitchCase="5">ng switch case is working</div>
+</div>
+
 <p appBasicHighlight> style me with directives</p>
-<p appBetterHightlight> style me with directives</p>
+<p appBetterHightlight [fontSize]= "'60px'">style me with better directives</p>
